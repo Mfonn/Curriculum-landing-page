@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biotechnology Transition Program</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+  <div class="slider">
+    <img src="slider1.png" class="slide" alt="Biotech Image 1" />
+    <img src="slider2.png" class="slide" alt="Biotech Image 2" />
+    <img src="slider3.png" class="slide" alt="Biotech Image 3" />
+  </div>
+  <div class="hero-text">
+    <h1>Biotechnology Transition Program</h1>
+    <p>Transform your health sciences background into a future-ready career in biotechnology, research, and innovation.</p>
+    <a href="#apply">Apply Now</a>
+  </div>
+</header>
+
+<section>
+  <h2>Why Biotechnology?</h2>
+  <p class="quote">“The best way to predict the future is to design it.” – Buckminster Fuller</p>
+  <p>
+    Biotechnology is shaping the future of medicine, agriculture, sustainability, and even AI. As healthcare evolves, the need for skilled professionals who can blend scientific research, data, and technology is growing rapidly. This program empowers you to transition from traditional health sciences to cutting-edge biotech with clarity and confidence.
+  </p>
+</section>
+
+<section>
+  <h2>The Curriculum</h2>
+  <p class="quote">“Education is the most powerful tool which you can use to change the world.” – Nelson Mandela</p>
+  <p>Our 18-month program is divided into structured learning phases designed to help you move from foundational skills to high-impact biotechnology innovation.</p>
+
+  <div class="phases">
+    <div class="phase fade-in">
+      <h3>Foundation Month</h3>
+      <p>Learn the essentials of reading, writing, creativity, and speaking. Develop clarity of thought and communication through immersive foundational experiences.</p>
+    </div>
+    <div class="phase fade-in">
+      <h3>Biotechnology Laboratory</h3>
+      <p>Understand lab design, equipment use, safety, and hands-on experimentation. Build the knowledge to run a real-world biotechnology lab.</p>
+    </div>
+    <div class="phase fade-in">
+      <h3>Medical Research & Innovation</h3>
+      <p>Explore innovation, research processes, data science, machine learning, smart materials, and nanotechnology in medical science.</p>
+    </div>
+    <div class="phase fade-in">
+      <h3>Software & Prototyping for Biotech</h3>
+      <p>Learn the tools of digital innovation — software development, 3D visualization, clinical trials, and how to take a biotech idea from concept to prototype.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>What You'll Gain</h2>
+  <ul>
+    <li>🔬 Master laboratory setup and safe experimentation</li>
+    <li>💻 Learn biotech programming and AI tools</li>
+    <li>📈 Build real-world innovation skills</li>
+    <li>🎤 Improve communication, documentation & leadership</li>
+    <li>🌍 Join a growing network of biotech pioneers in Africa</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 BioCircuit Laboratories · Empowering Our Future in Biotech</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+
+showSlides();
+</script>
+
+</body>
+</html>
